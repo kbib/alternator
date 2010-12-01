@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+body{
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+
+.block-ting_search{
+  padding:0 5px;
+}
+
+.block-ting_search h2,
+.block-ting_search #ting-search-form .example{
+  display:none;
+}
+
+#ting-search-form{
+  position:relative;
+}
+#ting-search-form #edit-keys-wrapper label{
+  position:absolute;
+  top:0;
+}
+#ting-search-form #edit-keys-wrapper{
+  margin-right:100px;
+}
+#ting-search-form #edit-keys-wrapper input{
+  width: 100%;
+}
+#ting-search-form #edit-submit-1{
+  position:absolute;
+  right:5px;
+  top:0;
+  background: gray;
+  border: 0 none;
+}
