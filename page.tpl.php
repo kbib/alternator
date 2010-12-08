@@ -21,15 +21,27 @@
   if (!empty($admin)) print $admin; 
 ?>
 
-  <?php if (!empty($logo)): ?>
-  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-  </a>
-  <?php endif; ?>
-  
-  <?php print theme('links', $primary_links, array('class' => 'topmenu clear-block')); ?>
-  
-  <?php print $search; ?>
+  <!-- img src="<?php print $logo; ?>" class="top_logo" alt="<?php print t('Home'); ?>" / -->
+  <div class="top">
+    <div class="top_top">
+    <?php if($user->uid): ?>
+      <?php print l(t('Logout'),'logout', array('attributes' => array('class' => 'login-btn')))?>
+    <?php else:?>
+      <?php print l(t('Login'),'user/login', array('attributes' => array('class' => 'login-btn')))?>
+    <?php endif;?>
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="home">
+        <img src="/profiles/ding/themes/kolding_mobile/images/top-top.png" />
+      </a>
+    </div>
+    <div class="top_bottom">
+      <img src="/profiles/ding/themes/kolding_mobile/images/top-bottom.png" />
+      <?php print $search; ?>
+    </div>
+    <!-- <?php if (!empty($logo)): ?>
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="home"><?php print t('Koldingbibliotekerne')?></a>
+    <?php endif; ?>-->  
+  </div>
+  <?php print theme('links', $mobilemainmenu, array('class' => 'topmenu clear-block')); ?>
   
   <?php print $content; ?>
   

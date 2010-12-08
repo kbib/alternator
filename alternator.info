@@ -40,5 +40,4 @@ stylesheets[handheld][]  = css/mobile.css
 
 ;--------------------- scripts ----------------------------
 scripts[] = script/jquery.infieldlabel.min.js
-scripts[] = script/jquery.jcarousel.js
-scripts[] = script.js
+scripts[] = script/setup.js
