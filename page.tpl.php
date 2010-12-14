@@ -1,4 +1,4 @@
-<?php
+  <?php
 // $Id$
 
 /**
@@ -21,13 +21,12 @@
   if (!empty($admin)) print $admin; 
 ?>
 
-  <!-- img src="<?php print $logo; ?>" class="top_logo" alt="<?php print t('Home'); ?>" / -->
   <div class="top">
     <div class="top_top">
     <?php if($user->uid): ?>
       <?php print l(t('Logout'),'logout', array('attributes' => array('class' => 'login-btn')))?>
     <?php else:?>
-      <?php print l(t('Login'),'user/login', array('attributes' => array('class' => 'login-btn')))?>
+      <?php print l(t('Login'),'user/login', array('attributes' => array('class' => 'login-btn'),'query' => drupal_get_destination()))?>
     <?php endif;?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="home">
         <img src="/profiles/ding/themes/kolding_mobile/images/top-top.png" />
@@ -37,20 +36,11 @@
       <img src="/profiles/ding/themes/kolding_mobile/images/top-bottom.png" />
       <?php print $search; ?>
     </div>
-    <!-- <?php if (!empty($logo)): ?>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="home"><?php print t('Koldingbibliotekerne')?></a>
-    <?php endif; ?>-->  
   </div>
-  <?php print theme('links', $mobilemainmenu, array('class' => 'topmenu clear-block')); ?>
-  
-  <?php print $content; ?>
-  
+  <?php print theme('links', $mobilemainmenu, array('class' => 'topmenu blackmenu clear-block')); ?>
   
 <?php if ($help OR $messages) { ?>
   <div id="drupal-messages">
-    <div id="messages-hide">
-      <a href="#"><?php print t('hide'); ?></a>
-    </div>
 
     <?php print $help ?>
     <?php print $messages ?>
@@ -58,10 +48,18 @@
     </div>
 <?php } ?>
 
+<?php #print $tabs;?>
+
+<?php print $content; ?>
+
+
+<?php print theme('links', $mobilebottommenu, array('class' => 'bottommenu blackmenu clear-block')); ?>
 
 
 
-<!-- 
+
+
+<?php /*
 
 <div id="container" class="clearfix">
 
@@ -112,7 +110,7 @@
               <div id="content-inner">
 
                 <?php
-                  /*if were in the user pages add the tabs in the top*/
+                  
                   if (arg(0) == 'user' && is_numeric(arg(1)) && $tabs){
                     print '<div class="tabs-user">' . $tabs . '</div>';
                   }
@@ -170,6 +168,8 @@
 </div>
 
  -->
+ 
+ */ ?>
 
 <?php print $closure; ?>
 </body>
