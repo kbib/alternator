@@ -1,0 +1,47 @@
+
+.ting-item-full .ting-status{
+  margin:1em;
+}
+
+#ting-object .picture{
+  
+}
+.landscape #ting-object .picture{
+  float:left;
+}
+#ting-object .picture img{
+  width:100%;
+}
+
+.rightofpic{
+  padding:1em;
+  font-size:1em;
+}
+
+.landscape .rightofpic{
+  display:block;
+  padding:1em;
+  margin-left:180px;
+  
+  -webkit-text-size-adjust: 100%;
+}
+
+
+#ting-object .item-list{
+  position:relative;
+}
+
+#ting-object .item-list h3{
+  position:absolute;
+  left:0;
+  margin:0;
+  font-size:1em;
+}
+#ting-object .item-list ul{
+  display:inline;
+  margin-left:100px;
+}
+#ting-object .item-list li{
+  display:inline;
+  margin:0;
+}

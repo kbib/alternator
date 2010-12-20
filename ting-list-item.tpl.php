@@ -23,21 +23,22 @@
 
 <div id="ting-item-<?php print $local_id; ?>" class="ting-item clearfix graybox-btns">
 
-<div class="content clearfix">
+<div class="content clearfix clear-block">
     <div class="picture">
       <?php if ($image) { ?>
-        <?php #print $image; ?>
+        <?php print $image; ?>
       <?php } ?>
     </div>
   
 <div class="item">
 <a href="<?php print $object->url ?>">
     <div class="info">
-      <span class='date'><?php print $date; ?></span>
+      
       <h3><?php print $object->title; ?></h3>
 
-      <em><?php echo t('by'); ?></em>
-      <?php print $object->creators_string ?>
+      <span class="author"><em><?php echo t('by'); ?></em>
+      <?php print $object->creators_string ?></span>
+      <span class='date'><?php print $date; ?></span>
 
       <div class='language'><?php echo t('Language') . ': ' . $language; ?></div>
       <?php

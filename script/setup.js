@@ -5,6 +5,14 @@ $(function(){
   });
   
   
+  if(window.orientation != 0){
+	  document.body.className+=' landscape';
+  }
+  
+  
+  
+$('.reserve-now').unbind();
+  
 });
 
 
@@ -38,4 +46,13 @@ Drupal.behaviors.addTingAutocomplete = function (context) {
 	 });
 	 });*/
 };
-	
+
+
+window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
+	if(window.orientation != 0){
+		document.body.className+=' landscape';
+	}
+	else{
+		document.body.className = document.body.className.replace(' landscape','');
+	}
+}, false);

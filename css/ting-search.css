@@ -1,0 +1,80 @@
+#ting-collection .picture, #ting-search-result .picture{
+  float:left;  
+}
+.picture img{
+  display:block;
+}
+#ting-search-result li, #ting-collection .content{
+  background-color:#f0f0f0;
+  /*min-height:120px;*/  
+}
+#ting-collection .item, #ting-search-result .item{
+  margin-left:80px;
+}
+#ting-search-result .subjects, #ting-search-result .creator, #ting-search-result .publication_date,
+#ting-collection .author,
+#ting-collection .date{
+  font-size:0.9em;
+  color:#a1a1a2;
+}
+
+#ting-search-result p.abstract{
+  margin-bottom:0;
+}
+
+#ting-search-results #ting-search-summary{
+  text-align:center;
+  padding:1em;
+}
+
+
+#ting-search-result h3,
+#ting-collection h3{
+  margin:0;
+  font-size:1em;
+}
+
+#ting-search-sort,
+#ting-search-summary{
+  margin-left:1em;
+}
+
+#ting-search-results #pager > div.nav{
+  display:none;
+}
+
+#ting-search-results #pager > div{
+width:25%;
+margin-top:3px;
+float:left;
+text-align:center;
+}
+#ting-search-results #pager > div:last-child{
+  float:right;
+}
+#ting-search-results #pager a {
+  display:block;
+  background:#f0f0f0;
+  padding:1em 0;
+  text-decoration:none;
+  color:#000;
+}
+
+#ting-search-sort{
+  padding:1em;
+  text-align:center;
+}
+
+ #ting-collection .material-links,
+ #ting-collection .terms{
+   display:none;
+ }
+ 
+ .ting-overview .creator{
+   margin:1em;
+  font-size:0.9em;
+  color:#a1a1a2;
+ }
+  .ting-overview .abstract{
+    margin:1em;
+  }
