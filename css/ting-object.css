@@ -8,6 +8,7 @@
 }
 .landscape #ting-object .picture{
   float:left;
+  width:180px;
 }
 #ting-object .picture img{
   width:100%;
