@@ -1,17 +1,21 @@
 $(function(){
-  $(".top label").inFieldLabels({
-    fadeOpacity:"0.2",
-    fadeDuration:"100"			
-  });
-  
+
   
   if(window.orientation != 0){
 	  document.body.className+=' landscape';
   }
   
-  
-  
-$('.reserve-now').unbind();
+  $('.reserve-now').unbind();
+
+  $('input.ting-autocomplete').each(function () {
+		$(this).unbind('keydown');
+		
+		$(".top label").inFieldLabels({
+		    fadeOpacity:"0.2",
+		    fadeDuration:"100"			
+		  });
+		
+	});
   
 });
 
@@ -24,9 +28,8 @@ Drupal.behaviors.dingLibraryUserLoginDialog = function () {
 }; 
 
 Drupal.behaviors.addTingAutocomplete = function (context) {
-	$('input.ting-autocomplete').each(function () {
-		$(this).unbind();
-	});
+	
+	
 		
 /*		$(this)
 	.autocomplete(Drupal.settings.tingSearchAutocomplete.path, {
