@@ -27,7 +27,7 @@
       <?php endif; ?>
       <?php if ($collection->date) : ?>
       <span class="publication_date">
-        <?php echo t('(%publication_date%)', array('%publication_date%' => $collection->date)) /* TODO: Improve date handling, localizations etc. */ ?>
+        (<?php echo $collection->date /* TODO: Improve date handling, localizations etc. */ ?>)
       </span>
       <?php endif; ?>
       <?php if ($collection->abstract) : ?>
