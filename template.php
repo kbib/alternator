@@ -1,4 +1,37 @@
 <?php 
+
+
+function alternator_preprocess_node(&$vars){
+  
+
+  if(in_array($vars['type'],array('article','event'))){
+  
+    unset($vars['links']);
+    unset($vars['field_library_ref_rendered']);
+    unset($vars['field_list_image_rendered']);
+    unset($vars['field_content_images_rendered']);
+    unset($vars['field_file_attachments_rendered']);
+    
+    $vars['submitted'] = $vars['date'];
+    
+    if($vars['type'] == 'event'){
+      $vars['submitted'] = $vars['node']->field_datetime[0]['view'];
+      
+      $vars['price'] = $vars['node']->field_entry_price[0]['view'];
+      #var_dump($vars['node']->field_entry_price);
+    }
+    
+    $vars['content'] = $vars['node']->content['body']['#value'];
+    
+  
+  }
+  
+ #var_dump($vars['node']);
+  
+}
+
+
+
 /**
  * Implementation of hook_preprocess_page
  * 

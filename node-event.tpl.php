@@ -61,19 +61,19 @@
   <h2><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
 <?php endif; ?>
 
-  <div class="meta">
+ <div class="meta">
   <?php if ($submitted): ?>
     <span class="submitted"><?php print $submitted ?></span>
   <?php endif; ?>
+  <?php if ($price): ?>
+    <span class="price"> - <?php print $price ?></span>
+  <?php endif; ?>
+  
 
-  <?php if ($terms): ?>
-    <div class="terms terms-inline"><?php print $terms ?></div>
-  <?php endif;?>
-  </div>
 
   <div class="content">
     <?php print $content ?>
   </div>
 
-  <?php print $links; ?>
+  <!-- <?php print $links; ?> -->
 </div>
