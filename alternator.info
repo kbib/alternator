@@ -34,6 +34,7 @@ stylesheets[all][]  = css/structure.css
 stylesheets[all][]  = css/layout.css
 stylesheets[all][]  = css/ting-search.css
 stylesheets[all][]  = css/ting-object.css
+stylesheets[all][]  = css/ding.css
 stylesheets[screen and (max-device-width: 480px)][]  = css/iphone.css
 stylesheets[handheld][]  = css/mobile.css
 ; for testing purpose
