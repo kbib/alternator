@@ -35,7 +35,7 @@ body{
   background: black url('../images/flere-arrow.gif') no-repeat 70px center;
 }
 .bottommenu li a{
-  text-transform:capitalize;
+  text-transform:none;
   font-weight:normal
 }
 body.front .bottommenu li:not(.frontpage):not(.mainsite):nth-child(even) > a{
