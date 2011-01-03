@@ -31,7 +31,9 @@ body{
 .topmenu li:nth-child(even) a{
   margin-left:1px;
 }
-
+.topmenu li.last a{
+  background: black url('../images/flere-arrow.gif') no-repeat 70px center;
+}
 .bottommenu li a{
   text-transform:capitalize;
   font-weight:normal
@@ -189,7 +191,7 @@ h2 {
  }
  
  
- #ding-reservation-confirm-form > div{
+ #ding-reservation-confirm-form > div p, #ding-reservation-confirm-form > div div{
    margin:1em;
  }
   
@@ -204,4 +206,13 @@ h2 {
   background:transparent none;
   padding:0;
   font-size:inherit;
+}
+
+
+#user-login input.form-submit{
+  background:#F39500;
+  padding:0 20px;
+  border:0;
+  -webkit-border-radius:0;
+  border-radius:0;
 }
