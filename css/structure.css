@@ -208,11 +208,3 @@ h2 {
   font-size:inherit;
 }
 
-
-#user-login input.form-submit{
-  background:#F39500;
-  padding:0 20px;
-  border:0;
-  -webkit-border-radius:0;
-  border-radius:0;
-}
