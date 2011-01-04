@@ -76,3 +76,23 @@ function alternator_feed_icon($url) {
     return '<a href="'. check_url($url) .'" class="feed-icon">'. $image .'<span>'. t('RSS') .'</span></a>';
   }
 }
+
+
+function alternator_theme() {
+  return array(
+    'user_login' => array(
+      'template' => 'user-login',
+      'arguments' => array('form' => NULL),
+    ),
+  );
+}
+
+function alternator_preprocess_user_login(&$variables){
+  $variables['form']['name']['#title'] = 'Cpr- eller kortnummer';
+  unset($variables['form']['name']['#description']);
+  $variables['form']['pass']['#title'] = 'Pinkode (4 tal)';
+  unset($variables['form']['pass']['#description']);
+  
+  $variables['rendered'] = drupal_render($variables['form']);
+}
+
