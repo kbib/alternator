@@ -48,7 +48,7 @@
  * @see template_preprocess_node()
  */
 
-//var_dump($node);
+#var_dump($node);
 
 
 ?>
@@ -63,10 +63,11 @@
 
  <div class="meta">
   <?php if ($submitted): ?>
-    <span class="submitted"><?php print $submitted ?></span>
+    <div class="submitted"><?php print $submitted ?></div>
   <?php endif; ?>
+  <div class="submitted"><?php print t('Arrangør: !arranger',array('!arranger' => $node->field_library_ref[0]['view'])) ?></div>
   <?php if ($price): ?>
-    <span class="price"> - <?php print $price ?></span>
+    <div class="price submitted"><?php print t('Pris: !price',array('!price' => $price)) ?></div>
   <?php endif; ?>
   
 
