@@ -26,7 +26,7 @@
     <?php if($user->uid): ?>
       <?php print l(t('Logout'),'logout', array('attributes' => array('class' => 'login-btn')))?>
     <?php else:?>
-      <?php print l(t('Login'),'user/login', array('attributes' => array('class' => 'login-btn'),'query' => drupal_get_destination()))?>
+      <?php print l(t('Login'),'user/login', array('attributes' => array('class' => 'login-btn'),'query' => 'destination=user/status'))?>
     <?php endif;?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="home">
         <img src="/profiles/ding/themes/kolding_mobile/images/top-top.png" />
