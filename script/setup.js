@@ -5,10 +5,20 @@ $(function(){
 	  document.body.className+=' landscape';
   }
   
+    
   $('.reserve-now').unbind();
 
   $('input.ting-autocomplete').each(function () {
-		$(this).unbind('keydown');
+	    // disable autocomplete for mobile site only.
+		$(this).unbind('keydown')
+		  // Put the search keys into the main searchbox.
+		  .val(Drupal.settings.tingSearch.keys)
+		  // And trigger the change event so that InFieldLabes will work correctly.
+		  .change();
+	
+		
+		
+		
 		
 		$(".top label").inFieldLabels({
 		    fadeOpacity:"0.2",
