@@ -34,7 +34,9 @@
     </div>
     <div class="top_bottom">
       <img src="/profiles/ding/themes/kolding_mobile/images/top-bottom.png" />
+      <div id="search">
       <?php print $search; ?>
+      </div>
     </div>
   </div>
   <?php print theme('links', $mobilemainmenu, array('class' => 'topmenu blackmenu clear-block')); ?>
