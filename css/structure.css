@@ -220,3 +220,11 @@ h2.articleheader {
   font-size:inherit;
 }
 
+
+#drupal-messages .status{
+  background-color:#F0F0F0;
+  padding:10px;
+  
+
+  
+}

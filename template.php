@@ -38,6 +38,16 @@ function alternator_preprocess_node(&$vars){
  * @param unknown_type $variables
  */
 function alternator_preprocess_page(&$variables){
+  
+  if(in_array('page-user-login',$variables['template_files'])){
+    $variables['content'] = '<h1>'.t('Login').'</h1>'.$variables['content'];
+  }
+  if(in_array('page-user-status',$variables['template_files'])){
+    $variables['content'] = '<h1>'.t('Min konto').'</h1>'.$variables['content'];
+  }
+  
+  //var_dump($variables);
+  
   $variables['mobilemainmenu'] = menu_navigation_links('menu-mobile-menu');
   $mobilebottommenu = menu_navigation_links('menu-bottom-menu');
   $mobilebottommenu['mainsite'] = array('href' => variable_get('mobile_tools_desktop_url',''),'title' => t('Gå til koldingbibliotekerners hjemmeside'));
@@ -88,10 +98,12 @@ function alternator_theme() {
 }
 
 function alternator_preprocess_user_login(&$variables){
+  
   $variables['form']['name']['#title'] = 'Cpr- eller kortnummer';
   unset($variables['form']['name']['#description']);
   $variables['form']['pass']['#title'] = 'Pinkode (4 tal)';
   unset($variables['form']['pass']['#description']);
+  $variables['form']['pass']['#suffix'] = '<p>'.t('tekst der skal stå efter login').'</p>';
   
   $variables['rendered'] = drupal_render($variables['form']);
 }

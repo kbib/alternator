@@ -35,21 +35,6 @@
     <?php } ?>
   <?php } ?>
 
-<div class="graybox-btns">
-
- <?php // TODO: This should be refactored into the availability module.
-    if (ting_object_is($object, 'limited_availability')) { ?>
-    <div class="ting-status waiting"><?php print t('waiting for data'); ?></div>
-    <?php } ?>
-    
-     <?php if ($buttons) :?>
-      <div class="ting-object-buttons">
-      <?php print theme('item_list', $buttons, NULL, 'ul', array('class' => 'buttons')) ?>
-      </div>
-    <?php endif; ?>
-
-</div>
-
 
   <?php if ($image) { ?>
   <div class="picture">
@@ -163,6 +148,20 @@
       <?php print theme('item_list', $object->record['dc:rights'][''], t('Rights'), 'ul', array('class' => 'rights'));?>
     <?php } ?>
     
+    <div>
+
+ <?php // TODO: This should be refactored into the availability module.
+    if (ting_object_is($object, 'limited_availability')) { ?>
+    <div class="ting-status waiting"><?php print t('waiting for data'); ?></div>
+    <?php } ?>
+    
+     <?php if ($buttons) :?>
+      <div class="ting-object-buttons">
+      <?php print theme('item_list', $buttons, NULL, 'ul', array('class' => 'buttons')) ?>
+      </div>
+    <?php endif; ?>
+
+</div>
     
     
   </div>

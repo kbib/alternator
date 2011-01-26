@@ -1,3 +1,5 @@
+<h1><?php print t('Search result')?></h1>
+
 <div id="ting-search-summary">
   <?php print t('Showing !firstResult-!lastResult of !count results',
                 array(
