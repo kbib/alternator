@@ -11,20 +11,24 @@
   width:180px;
 }
 #ting-object .picture img{
-  width:100%;
+  float:left;
+  width:80px;
 }
 
 .rightofpic{
   padding:1em;
   font-size:1em;
 }
-
-.landscape .rightofpic{
+.rightofpic{
   display:block;
   padding:1em;
-  margin-left:180px;
+  margin-left:80px;
   
   -webkit-text-size-adjust: 100%;
+}
+
+.landscape .rightofpic{
+  margin-left:180px;  
 }
 
 
