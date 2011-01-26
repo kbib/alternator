@@ -95,6 +95,13 @@ h2 {
   font-weight:bold;
 }
 
+h2.articleheader {
+  background:none;
+  text-transform:none;
+  padding:0;
+  margin-bottom:10px;
+}
+
 .more-link{
   text-align:left;
 }
