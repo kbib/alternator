@@ -16,7 +16,7 @@
         <?php print $picture; ?>
       </div>
     <?php endif; ?>
-    <div class="item graybox-btns<?php print $picture?'':' nopicture'; ?>">  
+    <div class="item graybox-btns<?php print $picture?'':' nopicture'; ?>">
     <a href="<?php print $collection->url; ?>">
     
       <h3><?php print $collection->title ?></h3>
@@ -35,6 +35,9 @@
         <?php print check_plain($collection->abstract); ?>
       </p>
       <?php endif; ?>
+      <div class="types">
+        <?php print $type_list; ?>
+      </div>
     </a>
     </div>
   </li>

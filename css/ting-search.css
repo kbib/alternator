@@ -78,3 +78,20 @@ text-align:center;
   .ting-overview .abstract{
     margin:1em;
   }
+  
+
+.ting-search-collection-types li{
+  list-style:none !important;
+  float:left;
+  background-color: #c0c0c0 !important;
+  color:#fff;
+  margin-bottom:5px !important;
+  margin-right:5px !important;
+  padding: 2px !important;
+}
+.ting-search-collection-types li.available{
+  background-color: #71BF44 !important;
+}
+.ting-search-collection-types li.unavailable{
+  background-color: #F85F26 !important;
+}

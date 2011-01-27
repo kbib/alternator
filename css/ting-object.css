@@ -50,3 +50,13 @@
   display:inline;
   margin:0;
 }
+
+
+#ting-object .ting-object-buttons .item-list  ul{
+  margin:0;
+} 
+
+.ting-object-buttons a{
+  display:none;
+}
+
