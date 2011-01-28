@@ -12,7 +12,7 @@ function alternator_preprocess_node(&$vars){
     unset($vars['field_content_images_rendered']);
     unset($vars['field_file_attachments_rendered']);
     
-    $vars['submitted'] = $vars['date'];
+    #$vars['submitted'] = $vars['date'];
     
     if($vars['type'] == 'event'){
       $vars['submitted'] = $vars['node']->field_datetime[0]['view'];

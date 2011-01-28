@@ -223,8 +223,8 @@ h2.articleheader {
 
 #drupal-messages .status{
   background-color:#F0F0F0;
-  padding:10px;
-  
-
-  
+  padding:10px; 
+}
+.pane-ding-debt-notice{
+  margin-left:10px;
 }
