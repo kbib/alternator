@@ -1,5 +1,8 @@
 
 
+
+
+
 <div id="ting-search-summary">
   <?php print t('Showing !firstResult-!lastResult of !count results',
                 array(
@@ -7,11 +10,6 @@
                   '!lastResult' => '<span class="lastResult"></span>',
                   '!count' => '<span class="count"></span>',
                 )); ?>
-</div>
-
-<div id="ting-search-result"  class="reset-list">
-  <ul>
-  </ul>
 </div>
 
 <div id="ting-search-sort">
@@ -22,3 +20,9 @@
     <?php } ?>
   </select>
 </div>
+
+<div id="ting-search-result"  class="reset-list">
+  <ul>
+  </ul>
+</div>
+
