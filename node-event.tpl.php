@@ -68,7 +68,7 @@
   <?php if ($submitted): ?>
     <div class="submitted"><?php print $submitted ?></div>
   <?php endif; ?>
-  <div class="submitted"><?php print t('Arrangør: !arranger',array('!arranger' => $node->field_library_ref[0]['view'])) ?></div>
+  <div class="submitted"><?php print t('Arrangør: !arranger',array('!arranger' => $node->field_library_ref[0]['safe']['title'])) ?></div>
   <?php if ($price): ?>
     <div class="price submitted"><?php print t('Pris: !price',array('!price' => $price)) ?></div>
   <?php endif; ?>
