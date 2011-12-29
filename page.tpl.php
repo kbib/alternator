@@ -16,9 +16,9 @@
   <?php print $scripts; ?>
 </head>
 <body class="<?php print $body_classes; ?><?php if (!empty($admin)) print ' '.admin;  ?>">
-<?php 
+<?php
 /*adds support for for the admin module*/
-  if (!empty($admin)) print $admin; 
+  if (!empty($admin)) print $admin;
 ?>
 
   <div class="top">
@@ -40,7 +40,7 @@
     </div>
   </div>
   <?php print theme('links', $mobilemainmenu, array('class' => 'topmenu blackmenu clear-block')); ?>
-  
+
 <?php if ($help OR $messages) { ?>
   <div id="drupal-messages">
 
@@ -59,7 +59,10 @@
 
 
 
+<div class="branding">
 
+<a class="logo-ting" href="http://ting.dk" title="TING">Empowered by TING</a>
+</div>
 
 <?php /*
 
@@ -69,12 +72,12 @@
       <div id="page-inner" class="clearfix">
 
 
-       
-        
+
+
 
         <div id="pageheader">
           <div id="pageheader-inner">
-            
+
             <div id="top" class="clearfix">
 
               <div id="search" class="left">
@@ -83,7 +86,7 @@
 
               <div id="account" class="left">
                 <?php #print $account; ?>
-              </div>  
+              </div>
 
             </div>
 
@@ -98,7 +101,7 @@
             <?php print $breadcrumb; ?>
           </div>
         </div>
-        
+
         <div id="pagebody" class="clearfix">
           <div id="pagebody-inner" class="clearfix">
 
@@ -112,7 +115,7 @@
               <div id="content-inner">
 
                 <?php
-                  
+
                   if (arg(0) == 'user' && is_numeric(arg(1)) && $tabs){
                     print '<div class="tabs-user">' . $tabs . '</div>';
                   }
@@ -121,7 +124,7 @@
                 <div id="content-main">
                   <?php print $content; ?>
                 </div>
-                
+
                 <?php
                   if (arg(0) != 'user'  && $tabs){
                     print '<div class="tabs">' . $tabs . '</div>';
@@ -153,14 +156,14 @@
             </div>
 
             <div class="left">
-              <?php print $footer_three; ?>             
+              <?php print $footer_three; ?>
             </div>
 
             <div class="left">
-              <?php print $footer_four; ?>              
+              <?php print $footer_four; ?>
               <?php print $footer; ?>
             </div>
-      
+
           </div>
         </div>
 
@@ -170,7 +173,7 @@
 </div>
 
  -->
- 
+
  */ ?>
 
 <?php print $closure; ?>

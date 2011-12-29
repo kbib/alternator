@@ -1,3 +1,16 @@
 #ding-reservation-confirm-form em{
   font-weight:bold;
 }
+
+.logo-ting {
+float: right;
+background: transparent url(../images/ting-logo.png) left top no-repeat;
+text-indent: -999em;
+display: block;
+height: 37px;
+width: 70px;
+}
+.branding {
+padding: 10px;
+min-height: 50px;
+}
